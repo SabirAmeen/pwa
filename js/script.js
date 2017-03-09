@@ -10,7 +10,7 @@ function check() {
         });
         navigator.credentials.store(c)
             .then(function() {
-                alert(c);
+                alert(c.id);
             });
         window.location = "home.html"; /*opens the target page while Id & password matches*/
     } else {
