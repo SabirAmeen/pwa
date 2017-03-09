@@ -19,8 +19,8 @@
             ]
         }
     }).then(function(cred) {
-    	window.location="home.html"
         if (cred) {
+        	window.location="home.html"
             console.log(cred.id);
             if (cred.id == "admin") {
                 window.location = "home.html";
