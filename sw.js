@@ -1,7 +1,10 @@
 var CACHE_NAME = 'pwa-Cache';
 var urlsToCache = [
-  './style/style.css',
-  './script.js'
+  'style/style.css',
+  'js/script.js',
+  'style/home.css',
+  'js/home.js',
+  'style/reset.css'
 ];
 
 self.addEventListener('install', function(event) {

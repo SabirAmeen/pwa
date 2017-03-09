@@ -11,10 +11,16 @@
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <header id="main-header">
         <img src="images/logo.png" id="header-logo">
     </header>
+<<<<<<< HEAD
     <form class="login_container" action="login.php" method="POST">
+=======
+    <div class="login_container">
+>>>>>>> development
         <h2 class="form-signin-heading">Please sign in</h2>
         <label class="control-label"></label>
         <div class="form-group">
@@ -22,11 +28,13 @@
             <input type="password" class="form-control" placeholder="Password" id="password" name="pass">
         </div>
         <div class="btns-group">
+<<<<<<< HEAD
             <button class="btn btn-lg btn-primary btn-block" type="submit" id="signin">Sign in</button>
+=======
+            <button class="btn btn-lg btn-primary btn-block" onclick="check()" id="signin">Sign in</button>
+>>>>>>> development
         </div>
-    </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    </div>
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
