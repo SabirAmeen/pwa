@@ -1,7 +1,7 @@
-var CACHE_NAME = 'Verge-Cache';
+var CACHE_NAME = 'pwa-Cache';
 var urlsToCache = [
-  './css/style.css',
-  './js/script.js'
+  './style/style.css',
+  './script.js'
 ];
 
 self.addEventListener('install', function(event) {
