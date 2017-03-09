@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Verge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="images/logo.png" id="header-logo">
+    </header>
+    <form class="login_container">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label class="control-label"></label>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email address" autofocus="" id="username" name="username">
+            <input type="password" class="form-control" placeholder="Password" id="password" name="pass">
+        </div>
+        <div class="btns-group">
+            <button class="btn btn-lg btn-primary btn-block" onclick="check(this.form)" type="submit" id="signin">Sign in</button>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+</body>
+
+</html>

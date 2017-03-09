@@ -1,0 +1,21 @@
+#main-header{
+	height: 50px;
+	background-color: #fa4b2a;
+	box-sizing: border-box;
+	text-align: center;
+}
+#header-logo{
+	width:100px;
+	height: auto;
+	margin-top: 10px;
+}
+.form-control{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.login_container{
+	box-sizing: border-box;
+	width:30%;
+	display: block;
+	margin: 0 auto;
+}

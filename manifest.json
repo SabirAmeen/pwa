@@ -1,0 +1,8 @@
+{
+	"name": "Verge",
+	"short_name": "Verge",
+	"display": "standalone",
+	"background_color": "#ddd",
+	"start_url" : "https://sabirameen.github.io/verge/index.html",
+	"description": "Ideas"
+}

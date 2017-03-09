@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Verge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-head">
+        <span class="menu">
+            <img id="menu-icon" src="images/menu.png" alt="Menu-btn">
+        </span>
+        <span class="logo">
+            <a href=""><img id="verge-logo" src="images/logo.png" alt="verge-logo"></a>
+        </span>
+        <span class="article-toggle">
+            <strong>11</strong>
+            <em>NEW ARTICLES</em>
+        </span>
+        <section id="trending-stories" class="hidden">
+            <a href="">
+                <p>TRENDING NOW</p>
+                <h3>Android 7.0 Nougat review: great, but does it matter?</h3>
+            </a>
+            <article id="trending-dropdown" class="hidden">
+                <h3>Apple said to have a curved iPhone in 2017, just like Samsung</h3>
+                <h3>Here's how to install Android Nougat on a Nexus right now</h3>
+                <h3>Seriously, don't drop your Galaxy Note 7</h3>
+                <h3>The best smart lights you can buy</h3>
+            </article>
+        </section>
+        <span id="trending-dropdown-btn" class="hidden">
+            <span id="dropdown-arrow">&#x25BC;</span>
+        </span>
+    </header>
+    <nav class="nav-bar hidden">
+        <ul class="nav-list">
+            <li><img src="https://cdn0.vox-cdn.com/images/verge/default-avatar.v9899025.gif" alt="user-image">
+                <p class="user-login">LOG IN | SIGN UP</p>
+            </li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">LONGFORM</a></li>
+            <li><a href="">REVIEWS</a></li>
+            <li><a href="">VIDEO</a></li>
+            <li><a href="">TECH</a></li>
+            <li><a href="">CIRCUIT BREAKER</a></li>
+            <li><a href="">SCIENCE</a></li>
+            <li><a href="">ENTERTAINMENT</a></li>
+            <li><a href="">CARS</a></li>
+            <li><a href="">TK;DR</a></li>
+            <li><a href="">FORUMS</a></li>
+            <li><a href="">SEARCH</a></li>
+            <li><a href="">MORE SECTIONS</a></li>
+        </ul>
+    </nav>
+    <section class="updated-articles hidden">
+        <article class="article-new">
+            <h2 class="list-date">AUGUST 18, 2016</h2>
+            <ul class="article-list">
+                <li class="list-time">6:50 am</li>
+                <li><a href="">
+				            Best Buy celebrates 50th anniversary with MacBook Pro, iPhone, and PS4 deals
+				 </a></li>
+            </ul>
+            <ul class="article-list">
+                <li class="list-time">7:30 am</li>
+                <li><a href="">
+				            
+				            Dreaming of a next-gen Nintendo console with modular controllers
+				          
+				 </a></li>
+            </ul>
+        </article>
+    </section>
+    <section class="important-articles">
+        <article id="important-art-one" class="important-art-common" onclick="location.href='';">
+            <h2 class="important-art-head">Twitter now lets any user filter out threats and abuse</h2>
+            <span class="author">
+         			 By Jordan Golson
+         			<span class="comment">
+         				19
+         			</span>
+            </span>
+        </article>
+        <article id="important-art-two" class="important-art-common" onclick="location.href='';">
+            <h2 class="important-art-head">17-inch gaming laptops are one big compromise</h2>
+            <span class="author">
+         			 By Jordan Golson
+         			 <span class="comment">
+         				19
+         			</span>
+            </span>
+        </article>
+        <article id="important-art-three" class="important-art-common" onclick="location.href='';">
+            <h2 class="important-art-head">Laika Studios and the making of Kubo and the Two Strings</h2>
+            <span class="author">
+         			 By Jordan Golson
+         			 <span class="comment">
+         				19
+         			</span>
+            </span>
+        </article>
+        <section class="article-scroller" style="font-size:0;">
+            <article id="important-art-four" class="important-art-common" onclick="location.href='';">
+                <h2 class="important-art-head">Cadillac's fantastic Escala concept is more New York than Detroit</h2>
+                <span class="author">
+         			 By Jordan Golson
+         			 <span class="comment">
+         				19
+         			</span>
+                </span>
+            </article>
+            <article id="important-art-five" class="important-art-common" onclick="location.href='';">
+                <h2 class="important-art-head">You should really be watching the weird and wonderful Final Fantasy XV anime</h2>
+                <span class="author">
+         			 By Jordan Golson
+         			 <span class="comment">
+         				19
+         			</span>
+                </span>
+            </article>
+            <article id="important-art-six" class="important-art-common" onclick="location.href='';">
+                <h2 class="important-art-head">Leaked PlayStation 4 slim images emerge online</h2>
+                <span class="author">
+         			 By Jordan Golson
+         			 <span class="comment">
+         				19
+         			</span>
+                </span>
+            </article>
+            <article id="important-art-seven" class="important-art-common" onclick="location.href='';">
+                <h2 class="important-art-head">Deus Ex: Mankind Divided 
+				review</h2>
+                <span class="author">
+         			 By Adil Robertson
+         			 <span class="comment">
+         				13
+         			</span>
+                </span>
+            </article>
+        </section>
+    </section>
+    <section id="video-section" class="hidden">
+        <div class="video-title-section">
+            <span id="video-title">
+    				TOP UNIVERSAL REMOTE
+    				<a href="">WATCH NOW</a>
+    			</span>
+    			<span id="see-more">
+    				SEE MORE
+    				<a href="">VIDEOS</a>
+    			</span>
+        </div>
+        <section id="main-video">       	
+        	<p>The best universal remote you can buy</p>
+        </section>
+        <section id="playlist">
+        	<ul>
+        	<li id="video-one">
+        		<div id="video-one-image" class="video-props">
+        		</div>
+          			<p>The best smart lights you can buy</p>
+        	</li>
+        	<li id="video-two">
+        		<div id="video-two-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>Huawei’s Honor 8 smartphone first look</p>
+        		</span>
+        	</li>
+        	<li id="video-three">
+        		<div id="video-three-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>Samsung Galaxy Note 7 review</p>
+        		</span>
+        	</li>
+        	<li id="video-four">
+        		<div id="video-four-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>The best wireless headphones for working out</p>
+        		</span>
+        	</li>
+        	<li id="video-five">
+        		<div id="video-five-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>The best turntable you can buy</p>
+        		</span>
+        	</li>
+        </section>
+    </section>
+    <section id="entry-section-one">
+        <section id="entry-left" class="hidden">
+            <article class="entry-section-left">
+                <h3><a href="">
+						Halt and Catch Fire's season three premiere aired early
+				</a></h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+                <img class="entry-image" src="https://cdn3.vox-cdn.com/thumbor/ZnKS5Nsjh-c5P1cPLgZpxCh5Wvg=/660x0:2340x1680/250x250/cdn0.vox-cdn.com/uploads/chorus_image/image/50473269/GettyImages-492825773.0.jpg" alt="fire season">
+                <p class="entry-content">
+                    The third season of
+                    <i>Halt and Catch Fire</i> , the 1980s-set drama about the rise of personal computers, has started early. AMC viewers can watch the series premiere right now, after the network sneakily bumped...
+                </p>
+            </article>
+            <article class="entry-section-left">
+                <h3><a href="">
+						Sony to reveal two new PlayStation 4 consoles next month, says WSJ
+				</a></h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+                <img class="entry-image" src="https://cdn3.vox-cdn.com/thumbor/bOQRdbvPVD_KoTBspqjVSM7nNS8=/227x0:2811x1723/600x400/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50475511/sony-playstation-4-neo-invite.0.0.jpg" alt="ps4">
+                <p class="entry-content">
+                    Sony will show off a new slimmer version of its current PlayStation 4 console next month,
+                    <a href="http://www.wsj.com/articles/sony-to-sell-updated-model-of-standard-playstation-4-1471833069">the Wall Street Journal reports</a> , a smaller and less expensive machine that would go on sale alongside the upgraded...
+                </p>
+            </article>
+        </section>
+        <section id="entry-center" class="hidden">
+            <article class="entry-section-center">
+                <h3><a href="">
+						Samsung will sell refurbished high-end phones, says report
+				</a></h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+                <img class="entry-image" src="https://cdn1.vox-cdn.com/thumbor/Fj3t7TRJXdFqwui3jlU0wyWPFhw=/0x0:2039x1359/600x400/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50475579/jbareham_160815_1180_A_0014.0.0.jpg" alt="Samsung Phone">
+                <p class="entry-content">
+                    Samsung is preparing to launch a new program selling refurbished, used versions of its high-end smartphones,
+                </p>
+            </article>
+            <article class="entry-section-right">
+                <h3><a href="">
+						Lyft pushes back at Uber’s ‘unsavory tactics’
+				</a></h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+                <img class="entry-image" src="https://cdn0.vox-cdn.com/thumbor/-j-JXX-PU_hP9VVORbKHb3McuGU=/106x0:1743x1091/600x400/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50469939/lyft_glowstache.0.0.jpg" alt="Uber Lyft">
+                <p class="entry-content">
+                    Lyft is not happy with Travis Kalanick and Uber. Last week, Lyft found itself the subject of several stories claiming the company was
+                    <a href="http://www.theverge.com/2016/8/19/12560422/lyft-acquisition-gm-no-buyer">involved in active but unsuccessful acquisition talks</a> with a number of...
+                </p>
+            </article>
+        </section>
+        <ul id="entry-mobile">
+            <li>
+                <img class="entry-image" src="https://cdn3.vox-cdn.com/thumbor/ZnKS5Nsjh-c5P1cPLgZpxCh5Wvg=/660x0:2340x1680/250x250/cdn0.vox-cdn.com/uploads/chorus_image/image/50473269/GettyImages-492825773.0.jpg" alt="fire season">
+                <h3>
+						<a href="">
+						Halt and Catch Fire's season three premiere aired early
+						</a>
+					</h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+            </li>
+            <li>
+                <img class="entry-image" src="https://cdn0.vox-cdn.com/thumbor/qi7TqN6Yu58ldvBtPvM-BhpJ6Fc=/341x0:1701x1360/250x250/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50475579/jbareham_160815_1180_A_0014.0.0.jpg" alt="Samsung phone">
+                <h3>
+						<a href="">
+						Samsung will sell refurbished high-end phones, says report
+						</a>
+					</h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+            </li>
+            <li>
+                <img class="entry-image" src="https://cdn0.vox-cdn.com/thumbor/LwqIkM6vmQQ2nnSwNPfmpc83lss=/660x0:2380x1720/250x250/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50475511/sony-playstation-4-neo-invite.0.0.jpg" alt="ps4">
+                <h3>
+						<a href="">
+						Sony to reveal two new PlayStation 4 consoles next month, says WSJ
+						</a>
+					</h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+            </li>
+            <li>
+                <img class="entry-image" src="https://cdn3.vox-cdn.com/thumbor/VvQX2Jevln__NrQPO0S96ygQ0dU=/379x0:1470x1091/250x250/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50469939/lyft_glowstache.0.0.jpg" alt="uber lyft">
+                <h3>
+						<a href="">
+						Lyft pushes back at Uber’s unsavory tactics
+						</a>
+					</h3>
+                <span class="entry-author"><a href="">James Vincent</a></span>
+                <em class="article-time">21 minutes ago</em>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <a id="back-to-top" href="#">BACK TO TOP</a>
+        <section class="foot">
+            <div id="search-form-foot">
+                <img id="foot-logo" class="hidden" src="images/verge-logo.png" alt="verge logo white">
+                <input type="text" id="search-foot" placeholder="Search articles &amp; products" />
+            </div>
+            <ul id="left-foot-nav">
+                <li class="foot-nav-head hidden">
+                    <p>
+                        THE
+                        <a href="">SECTIONS</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="">Longform</a>
+                </li>
+                <li>
+                    <a href="">Video</a>
+                </li>
+                <li>
+                    <a href="">Reviews</a>
+                </li>
+                <li>
+                    <a href="">Tech</a>
+                </li>
+                <li>
+                    <a href="">Science</a>
+                </li>
+                <li>
+                    <a href="">Culture</a>
+                </li>
+                <li>
+                    <a href="">Cars</a>
+                </li>
+                <li>
+                    <a href="">Design</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">US &amp; World</a>
+                </li>
+            </ul>
+            <ul id="center-foot-nav">
+                <li class="foot-nav-head hidden">
+                    <p>
+                        THE
+                        <a href="">BASICS</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="">Site Status</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">Tip Us</a>
+                </li>
+                <li>
+                    <a href="">Forums</a>
+                </li>
+                <li>
+                    <a href="">Jobs</a>
+                </li>
+            </ul>
+            <ul id="right-foot-nav" class="hidden">
+                <li class="foot-nav-head hidden">
+                    <p>
+                        THE
+                        <a href="">ELSEWHERE</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="">Facebook</a>
+                </li>
+                <li>
+                    <a href="">Twitter</a>
+                </li>
+                <li>
+                    <a href="">Tumblr</a>
+                </li>
+                <li>
+                    <a href="">Youtube</a>
+                </li>
+                <li>
+                    <a href="">Instagram</a>
+                </li>
+                <li>
+                    <a href="">Subscribe</a>
+                </li>
+            </ul>
+            <ul id="foot-icons">
+                <li>
+                    <img class="icon" src="images/facebook.png" alt="facebook share">
+                </li>
+                <li>
+                    <img class="icon" src="images/twitter.png" alt="twitter share">
+                </li>
+                <li>
+                    <img class="icon" src="images/tumblr.png" alt="tumblr share">
+                </li>
+                <li>
+                    <img class="icon" src="images/youtube.png" alt="youtube share">
+                </li>
+                <li>
+                    <img class="icon" src="images/instagram.png" alt="instagram share">
+                </li>
+                <li>
+                    <img class="icon" src="images/rss.png" alt="rss feed">
+                </li>
+            </ul>
+            <section id="terms" class="hidden"> <a href="http://www.theverge.com/ethics-statement">Ethics Statement</a>
+                <a href="http://www.theverge.com/community-guidelines">Community Guidelines</a>
+                <br/>
+                <a href="http://www.voxmedia.com/terms-of-use">Terms of Use</a>
+                <a href="http://www.voxmedia.com/privacy-policy">Privacy Policy</a>
+                <p> All Systems Operational</p>
+                <a href="http://status.voxmedia.com" target="_blank">Check out our status page for more details.</a>
+            </section>
+            <section id="copyrights">
+                <span id="powered-by">VOX MEDIA <img src="images/voxmedia.png" alt="vox media"></span>
+                <span>
+			&copy; 2016 
+			<a href="">Vox Media</a>
+			, Inc. All rights reserved.
+			</span>
+            </section>
+        </section>
+    </footer>
+    <div class="transparent-nav hidden"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+	</script>
+</body>
+
+</html>
