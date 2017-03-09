@@ -8,11 +8,28 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript">
+    navigator.credentials.get({
+        password: true,
+        unmediated: true, // request a credential without user mediation
+        federated: {
+            providers: [
+                'https://account.google.com',
+                'https://www.facebook.com'
+            ]
+        }
+    }).then(function(cred) {
+        if (cred) {
+            console.log(cred.id);
+            if (cred.id == "admin") {
+                window.location = "home.html";
+            }
+        }
+    })
+    </script>
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <header id="main-header">
         <img src="images/logo.png" id="header-logo">
     </header>
@@ -27,6 +44,8 @@
             <button class="btn btn-lg btn-primary btn-block" onclick="check()" id="signin">Sign in</button>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
