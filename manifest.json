@@ -4,7 +4,9 @@
     "display": "standalone",
     "background_color": "#ddd",
     "icons": {
-        "48": "images/icon.jpg"
+        "src": "images/icon.jpg",
+		"sizes" : "48x48",
+		"type": "image/jpg"
     },
     "start_url": "https://sabirameen.github.io/pwa/index.html",
     "description": "Ideas"
