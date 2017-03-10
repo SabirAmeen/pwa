@@ -15,7 +15,12 @@
 }
 .login_container{
 	box-sizing: border-box;
-	width:30%;
+	width:60%;
 	display: block;
 	margin: 0 auto;
+}
+@media(min-width:768px){
+	.login_container{
+		width: 30%;
+	}
 }
