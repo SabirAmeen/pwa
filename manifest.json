@@ -1,8 +1,11 @@
 {
-	"name": "PWA-Verge",
-	"short_name": "Verge",
-	"display": "standalone",
-	"background_color": "#ddd",
-	"start_url" : "https://sabirameen.github.io/pwa/index.html",
-	"description": "Ideas"
+    "name": "PWA-Verge",
+    "short_name": "Verge",
+    "display": "standalone",
+    "background_color": "#ddd",
+    "icons": {
+        "48": "images/icon.jpg"
+    },
+    "start_url": "https://sabirameen.github.io/pwa/index.html",
+    "description": "Ideas"
 }
