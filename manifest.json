@@ -3,11 +3,19 @@
     "short_name": "Verge",
     "display": "standalone",
     "background_color": "#ddd",
-    "icons": {
-        "src": "images/icon.jpg",
-		"sizes" : "48x48",
-		"type": "image/jpg"
-    },
+    "icons": [{
+        "src": "images/icon.png",
+        "sizes": "48x48",
+        "type": "image/png"
+    }, {
+        "src": "images/icon.png",
+        "sizes": "72x72",
+        "type": "image/png"
+    }, {
+        "src": "images/icon.png",
+        "sizes": "196x196",
+        "type": "image/png"
+    }],
     "start_url": "https://sabirameen.github.io/pwa/index.html",
     "description": "Ideas"
 }
